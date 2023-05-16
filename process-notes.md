@@ -1,5 +1,7 @@
 https://www.youtube.com/watch?v=K8YELRmUb5o&t=188s
-Getting Started 
+
+Getting Started - **When starting my audio project, i might do client folder first, but make sure to add .gitignore. Also, kinda wanna use vite for client folder, but might mess things up
+
 Server Folder
 
 Open terminal in project folder. Type,
@@ -23,3 +25,17 @@ Next,
 2. add new file inside server folder called index.js and add a lot of imports so we can use them - see this commit ('setting up dependencies, importing them, and mongo db set up') to see what added to index.js file. Note, during this process you will need to set up mongodb (you've done this before - if need help though look at a previous projects instructions on how to set up mongodb or 16:06 of video) and put it in .env file (after setup on mongodb website you press connect -> connect to your application (through 'Drivers') -> copy the key, i.e. that connection string into .env with MONGO_URL='' and put string in there but change password -> add PORT=3001 to .env file (we're gonna have front end running on 3000 and backend running on 3001) )
 3. add "start": "nodemon index.js" in package.json under scripts
 4. Run 'npm start' in server folder in terminal. Should see 'Server Port: 3001'
+
+Client Folder (getting started continued)
+
+1. In terminal of parent/root directory type
+    a. npx create-react-app client
+    b. cd client
+    c. npm i react-redux @reduxjs/toolkit redux-persist react-dropzone dotenv formik yup react-router-dom@6 @mui/material @emotion/react @emotion/styled @mui/icons-material
+
+  react-redux redux is a state management tool
+  @reduxjs/toolkit is an easy way to use redux. its a wrapper around redux
+  redux-persist so that you can selectively store state into local state if want to 
+  react-dropzone handles file upload on frontend so can send to backend
+  formik for form handling
+  yup validation
