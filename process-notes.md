@@ -39,3 +39,5 @@ Client Folder (getting started continued)
   react-dropzone handles file upload on frontend so can send to backend
   formik for form handling
   yup validation
+
+At this point, to get it to work (npm start in terminal), I had to dolete the jscong.json file. I will add it back after this commit. once finish backend, startup again at 1:48:34

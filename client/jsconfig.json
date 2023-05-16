@@ -1,8 +1,0 @@
-{
-  "compilerOptions": {
-    "baseUrl": "src"
-  },
-  "include": ["src"]
-}
-
-//what this is doing is when you import different files into other files, you can just start from src
