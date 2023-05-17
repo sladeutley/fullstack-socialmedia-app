@@ -43,3 +43,6 @@ Client Folder (getting started continued)
   yup validation
 
 At this point, to get it to work (npm start in terminal), I had to dolete the jscong.json file. I will add it back after this commit. once finish backend, startup again at 1:47:49 - it won't be working yet bc of jsconfig.json, but do all the redux setup to see if it fixes issue
+
+
+*NOTE - will need to use something like cloudinary instead of multer and storing image files locally for when i want to deploy this
