@@ -10,6 +10,7 @@ import morgan from "morgan";
 import path from "path"; //this is a native package that comes with node already
 import { fileURLToPath } from "url";
 import authRoutes from "./routes/auth.js"; //a route folder where we'll have the paths and routes for every feature - except "/auth/register" below bc we need that in this file bc of it's middleware
+import userRoutes from "./routes/users.js";
 import { register } from "./controllers/auth.js";
 
 /* CONFIGURATIONS */
@@ -44,6 +45,7 @@ app.post("/auth/register", upload.single("picture"), register); //if user wants 
 
 /* ROUTES */
 app.use("/auth", authRoutes);
+app.use("/users", userRoutes);
 
 
 /* MONGOOSE SETUP */
