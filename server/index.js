@@ -9,6 +9,7 @@ import morgan from "morgan";
 //next two allow us to properly set the paths when we configure directories later on
 import path from "path"; //this is a native package that comes with node already
 import { fileURLToPath } from "url";
+import { register } from "./controllers/auth.js";
 
 /* CONFIGURATIONS */
 /* this includes all the middleware (something that runs in between different requests - basically functions that run between requests) configurations as wells as different package configurations */
@@ -36,6 +37,10 @@ const storage = multer.diskStorage({
   },
 });
 const upload = multer({ storage });
+
+/* ROUTES WITH FILES */
+app.post("/auth/register", upload.single("picture"), register); //if user wants to register, gonna call this api route from front end (the /auth/register part), then we're gonna upload a picture locally into the public/assets folder with middleware - called middleware bc it's inbetween and occurs before our actual logic , aka the register part at end - so it occurs before we reach our end point, the register part (**i wonder if the middleware is where someone could use something like cloudinary if don't wanna do it local). And note, we're going to be creating the register controller as well, which is why we import it above
+
 
 /* MONGOOSE SETUP */
 const PORT = process.env.PORT || 6001;

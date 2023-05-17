@@ -1,6 +1,8 @@
 https://www.youtube.com/watch?v=K8YELRmUb5o&t=188s
 
-Getting Started - **When starting my audio project, i might do client folder first, but make sure to add .gitignore. Also, kinda wanna use vite for client folder, but might mess things up
+Getting Started - **When starting my audio project, i might do client folder first, but make sure to add .gitignore. Also, kinda wanna use vite for client folder, but might mess things up - I think you should - Maybe when starting auido project, just do backend first then try to see if i can get everything working with vite bc it seems create react app is deprecated
+
+To start server, 'npm start'. To start client, 'npm run start'
 
 Server Folder
 
