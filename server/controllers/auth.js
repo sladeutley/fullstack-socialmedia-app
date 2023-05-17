@@ -39,3 +39,24 @@ export const register = async (req, res) => { //this has to be asyncronous bc we
 };
 
 // Note, the way this register function will work is we're gonna encrypt the password, save it, then after we save it, when user tries to log in, they're gonna provide the password, we're gonna salt it again, and we're gonna make sure that's the correct one and give them a json web token
+
+/* LOGGING IN */
+export const login = async (req, res) => {
+  try {
+    const { email, password } = req.body; //grab email and password when user trys to log in
+    const user = await User.findOne({ email: email }); //use mongoose to try to find the one that has this email
+    if (!user) return res.status(400).json({ msg: "User does not exist. " });
+
+    const isMatch = await bcrypt.compare(password, user.password); //this checks is password enters matches. uses same salt encryption to determine if same hash
+    if (!isMatch) return res.status(400).json({ msg: "Invalid credentials. " });
+
+    //give user json web token and give them secret string that we have in .env file - note, that string can be anything i want
+    const token = jwt.sign({ id: user._id }, process.env.JWT_SECRET);
+    delete user.password; //delete the password so it doesn't get sent back to front end
+    res.status(200).json({ token, user });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+};
+
+//Note, when have a bigger company you either a)have another company pretty much do all the authentication for you bc it's really important and there are lots of ways to hack what we have, or b) have a dedicated team to this. What we have hear is the basic way to do authentication
