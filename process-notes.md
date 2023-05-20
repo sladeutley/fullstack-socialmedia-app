@@ -46,7 +46,6 @@ At this point, to get it to work (npm start in terminal), I had to dolete the js
 
 Note, jsconfig.json makes it so when you import files into other files, you can just start with src
 
-//Watch from 1:42:00 to around 1:47:49 where you will start up again coding
-
-
 *NOTE - will need to use something like cloudinary instead of multer and storing image files locally for when i want to deploy this
+
+//2:21:24 - navbar
