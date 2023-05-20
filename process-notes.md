@@ -1,6 +1,6 @@
 https://www.youtube.com/watch?v=K8YELRmUb5o&t=188s
 
-Getting Started - **When starting my audio project, i might do client folder first, but make sure to add .gitignore. Also, kinda wanna use vite for client folder, but might mess things up - I think you should - Maybe when starting auido project, just do backend first then try to see if i can get everything working with vite bc it seems create react app is deprecated
+Getting Started - **When starting auido project, just do backend first (skip github commits on frontend install until back end complete) then try to see if i can get everything working with vite bc it seems create react app is deprecated
 
 To start server, 'npm start'. To start client, 'npm run start'
 
@@ -42,7 +42,9 @@ Client Folder (getting started continued)
   formik for form handling
   yup validation
 
-At this point, to get it to work (npm start in terminal), I had to dolete the jscong.json file. I will add it back after this commit. once finish backend, startup again at 1:47:49 - it won't be working yet bc of jsconfig.json, but do all the redux setup to see if it fixes issue
+At this point, to get it to work (npm start in terminal), I had to dolete the jscong.json file -> actually, i just had to get rid of commented out code in it
+
+Note, jsconfig.json makes it so when you import files into other files, you can just start with src
 
 //Watch from 1:42:00 to around 1:47:49 where you will start up again coding
 
