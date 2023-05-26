@@ -117,7 +117,7 @@ const Navbar = () => {
         </FlexBetween>
       ) : (
         <IconButton
-          //look into where this is done bc this is supposed to be desktop
+          //look into where this is done bc this is supposed to be desktop - I think this is just say if not nonmobilescreen, show this menu. Then down below in MOBILE NAV we show what happens when mobile screen hamburger menu is opened
           onClick={() => setIsMobileMenuToggled(!isMobileMenuToggled)}
         >
           <Menu />

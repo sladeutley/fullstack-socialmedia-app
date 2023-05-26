@@ -48,4 +48,4 @@ Note, jsconfig.json makes it so when you import files into other files, you can 
 
 *NOTE - will need to use something like cloudinary instead of multer and storing image files locally for when i want to deploy this
 
-//2:21:24 - navbar
+//2:47:43 - login and register page
