@@ -46,6 +46,9 @@ At this point, to get it to work (npm start in terminal), I had to dolete the js
 
 Note, jsconfig.json makes it so when you import files into other files, you can just start with src
 
-*NOTE - will need to use something like cloudinary instead of multer and storing image files locally for when i want to deploy this
+*NOTE - will need to use something like cloudinary instead of multer and storing image files locally for when i want to deploy this -> *Actually, looks like multer can support mp3 uploads, so might not need to change to cloudinary for mvp
 
-//2:47:43 - login and register page
+Redux Toolkit chrome extension (also don't forget about react devtools chrome extension) - 1. go to inspect elements 2. it will show the redux option (like there's console. Note, this is also where the react dev extension tools are) 3. click on, for instance, state and can see current state. NOTE, for this app, we also have user info stored in local storage because of redux persist -> go to application tab in inspect elements
+
+
+//3:30:59 - get that redux extension
