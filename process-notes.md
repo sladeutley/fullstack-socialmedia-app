@@ -50,5 +50,6 @@ Note, jsconfig.json makes it so when you import files into other files, you can 
 
 Redux Toolkit chrome extension (also don't forget about react devtools chrome extension) - 1. go to inspect elements 2. it will show the redux option (like there's console. Note, this is also where the react dev extension tools are) 3. click on, for instance, state and can see current state. NOTE, for this app, we also have user info stored in local storage because of redux persist -> go to application tab in inspect elements
 
+**When done, make sure to try to deploy on render and maybe netlify to make sure it works before starting audio project. Also, when doing audio project, look at things you're trying to imitate, like youtube and tiktok and instagram to see how mobile and desktop layout should be
 
 //3:30:59 - get that redux extension
