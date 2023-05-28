@@ -52,6 +52,8 @@ Redux Toolkit chrome extension (also don't forget about react devtools chrome ex
 
 Note, doesn't look like there's functioning commenting ability, so will need to add that
 
+Note, found bug when adding yourself as a friend (-> to fix, just don't allow the add friend icon to appear next to your own post in feed)
+
 **When done, make sure to try to deploy on render and maybe netlify to make sure it works before starting audio project. Also, when doing audio project, look at things you're trying to imitate, like youtube and tiktok and instagram to see how mobile and desktop layout should be
 
-//4:03:25 - create widget where user posts
+//done, now need to make sure can deploy (maybe try render and netlify), then redo for audio project but use vite instead of npx create react app, then start modifying (1. make just simple comments work first so user able to comment then have on schema so comments can be like or responded too 2. be able to add audio 3. have it play audio 4. have it have modal where when clicked on the post shows up (like tik tok), 5. have it look like tiktok in mobile 6. add settings option at top so can have things turned on like where you use those youtube api for shorts 7. etc, look at notes above and also in notes folder on this project for all features needed)
