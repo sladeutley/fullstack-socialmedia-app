@@ -52,4 +52,4 @@ Redux Toolkit chrome extension (also don't forget about react devtools chrome ex
 
 **When done, make sure to try to deploy on render and maybe netlify to make sure it works before starting audio project. Also, when doing audio project, look at things you're trying to imitate, like youtube and tiktok and instagram to see how mobile and desktop layout should be
 
-//3:30:59 - get that redux extension
+//4:03:25 - create widget where user posts
